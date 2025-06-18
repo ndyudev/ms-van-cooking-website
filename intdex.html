@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cô Vân - Dịch vụ nấu ăn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fa-solid fa-utensils"></i> Cô Vân</div>
+            <ul>
+                <li><a href="#hero"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li><a href="#services"><i class="fa-solid fa-bell-concierge"></i> Dịch vụ</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> Về chúng tôi</a></li>
+                <li><a href="#menu"><i class="fa-solid fa-book-open"></i> Thực đơn</a></li>
+                <li><a href="#booking"><i class="fa-solid fa-calendar-check"></i> Đặt dịch vụ</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1><i class="fa-solid fa-bowl-food"></i> Chào mừng đến với Cô Vân</h1>
+        <p>Dịch vụ nấu ăn gia đình, sự kiện, tiệc cưới hỏi, liên hoan chuyên nghiệp, tận tâm!</p>
+        <button onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})"><i class="fa-solid fa-paper-plane"></i> Đặt ngay</button>
+    </section>
+
+    <!-- Slider ảnh món ăn -->
+    <section id="food-slider">
+        <h2><i class="fa-solid fa-images"></i> Món ăn nổi bật</h2>
+        <div class="swiper foodSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 1"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/c4/f5/12/c4f512c14e297f05a31221d634364f40.jpg" alt="Món ăn 2"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/e0/a9/48/e0a94831af2160839672326f11670dab.jpg" alt="Món ăn 3"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 4"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 5"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 6"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 7"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 8"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 9"></div>
+                <div class="swiper-slide"><img src="https://i.pinimg.com/736x/b0/7f/d5/b07fd5e0ce5f83664f6e53b358c00561.jpg" alt="Món ăn 10"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2><i class="fa-solid fa-bell-concierge"></i> Dịch vụ của chúng tôi</h2>
+        <div class="service-container">
+            <div class="service">
+                <i class="fa-solid fa-house-chimney"></i>
+                <h3>Nấu ăn tại nhà</h3>
+                <p>Đầu bếp đến tận nơi, thực đơn đa dạng, phục vụ gia đình, sinh nhật, thôi nôi, giỗ chạp...</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <h3>Catering sự kiện</h3>
+                <p>Phục vụ tiệc cưới, hội nghị, liên hoan công ty, khai trương, tiệc ngoài trời...</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>Khóa học nấu ăn</h3>
+                <p>Học nấu món Việt, Âu, Á cùng đầu bếp giàu kinh nghiệm, thực hành trực tiếp.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><i class="fa-solid fa-user"></i> Về chúng tôi</h2>
+        <div class="about-container">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Cô Vân" class="about-img">
+            <div class="about-text">
+                <p><b>Cô Vân</b> với hơn 20 năm kinh nghiệm trong lĩnh vực ẩm thực, luôn đặt chất lượng và sự hài lòng của khách hàng lên hàng đầu. Chúng tôi tự hào mang đến những bữa ăn ngon, an toàn, hợp vệ sinh và đậm đà hương vị Việt.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Đội ngũ đầu bếp chuyên nghiệp, tận tâm</li>
+                    <li><i class="fa-solid fa-check"></i> Nguyên liệu tươi sạch, nguồn gốc rõ ràng</li>
+                    <li><i class="fa-solid fa-check"></i> Phục vụ đa dạng nhu cầu: gia đình, công ty, sự kiện lớn nhỏ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2><i class="fa-solid fa-book-open"></i> Thực Đơn Mẫu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Khai Vị</h3>
+                <p>Gỏi cuốn tôm thịt, nem rán, salad Nga, soup cua...</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                <h3>Món Chính</h3>
+                <p>Cơm chiên hải sản, bò sốt tiêu đen, cá hấp xì dầu, lẩu Thái...</p>
+            </div>
+            <div class="menu-item">
+                <i class="fa-solid fa-ice-cream"></i>
+                <h3>Tráng Miệng</h3>
+                <p>Chè khúc bạch, rau câu dừa, trái cây tươi, bánh flan...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2><i class="fa-solid fa-star"></i> Đánh Giá từ Khách Hàng</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <i class="fa-solid fa-user"></i>
+                <p>"Dịch vụ nấu ăn tại nhà của Cô Vân thật tuyệt vời! Món ăn ngon, phục vụ tận tâm, giá hợp lý."</p>
+                <h4>- Nguyễn Văn A</h4>
+            </div>
+            <div class="testimonial">
+                <i class="fa-solid fa-user"></i>
+                <p>"Tiệc công ty rất thành công nhờ đội ngũ catering chuyên nghiệp của Cô Vân. Sẽ ủng hộ dài lâu!"</p>
+                <h4>- Trần Thị B</h4>
+            </div>
+            <div class="testimonial">
+                <i class="fa-solid fa-user"></i>
+                <p>"Khóa học nấu ăn rất bổ ích, tôi đã tự tin nấu nhiều món ngon cho gia đình."</p>
+                <h4>- Lê Minh C</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2><i class="fa-solid fa-circle-question"></i> Câu Hỏi Thường Gặp</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-plus"></i> Làm thế nào để đặt dịch vụ?</div>
+                <div class="faq-answer">Bạn có thể đặt dịch vụ thông qua form trên trang web hoặc liên hệ trực tiếp qua điện thoại.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-plus"></i> Dịch vụ có sẵn ở những khu vực nào?</div>
+                <div class="faq-answer">Chúng tôi cung cấp dịch vụ tại các khu vực nội thành và ngoại thành TP.HCM.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><i class="fa-solid fa-plus"></i> Có nhận tiệc ngoài trời không?</div>
+                <div class="faq-answer">Chúng tôi nhận tổ chức tiệc ngoài trời, picnic, teambuilding với thực đơn linh hoạt.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2><i class="fa-solid fa-calendar-check"></i> Đặt Dịch Vụ</h2>
+        <form id="booking-form">
+            <label for="name"><i class="fa-solid fa-user"></i> Họ và tên *</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email *</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+            <label for="phone"><i class="fa-solid fa-phone"></i> Số điện thoại *</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            <label for="service"><i class="fa-solid fa-list"></i> Chọn dịch vụ *</label>
+            <select id="service" name="service" required>
+                <option value="">-- Chọn dịch vụ --</option>
+                <option value="home">Nấu ăn tại nhà</option>
+                <option value="catering">Catering sự kiện</option>
+                <option value="course">Khóa học nấu ăn</option>
+            </select>
+            <label for="note"><i class="fa-solid fa-note-sticky"></i> Ghi chú</label>
+            <textarea id="note" name="note" placeholder="Yêu cầu thêm (nếu có)" rows="3"></textarea>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Gửi đăng ký</button>
+            <div id="form-message" style="margin-top:10px;"></div>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2><i class="fa-solid fa-phone"></i> Liên hệ</h2>
+        <div class="contact-card">
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> <b>Email:</b> chauunhatduyit@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> <b>Điện thoại:</b> 0123 456 789</p>
+                <p><i class="fa-solid fa-location-dot"></i> <b>Địa chỉ:</b> 123 Đường Ẩm Thực, Quận 1, TP.HCM</p>
+            </div>
+            <div class="contact-social">
+                <a href="https://facebook.com/NauAnCoVan" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://zalo.me" target="_blank" title="Zalo"><i class="fa-solid fa-comment"></i></a>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=123+Đường+Ẩm+Thực,+Quận+1,+TP.HCM&output=embed" width="100%" height="300" style="border:0; border-radius:12px; margin-top:20px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="card-visit">
+        <h2><i class="fa-solid fa-id-card"></i> Card Visit</h2>
+        <div class="visit-card">
+            <div class="visit-avatar">
+                <img src="https://www.pinterest.com/pin/27162403995691309/" alt="Avatar Cô Vân" />
+            </div>
+            <div class="visit-info">
+                <h3>Cô Vân</h3>
+                <p><i class="fa-solid fa-utensils"></i> Dịch vụ nấu ăn chuyên nghiệp</p>
+                <p><i class="fa-solid fa-phone"></i> 0123 456 789</p>
+                <p><i class="fa-solid fa-envelope"></i> chauunhatduyit@gmail.com</p>
+                <a href="https://facebook.com/NauAnCoVan" target="_blank" class="visit-facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cô Vân. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(q){
+        q.addEventListener('click', function(){
+            const answer = this.nextElementSibling;
+            answer.classList.toggle('open');
+            this.querySelector('i').classList.toggle('fa-plus');
+            this.querySelector('i').classList.toggle('fa-minus');
+        });
+    });
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target){
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    // SwiperJS cho slider món ăn
+    var swiper = new Swiper('.foodSwiper', {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+            delay: 2200,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1 },
+            600: { slidesPerView: 2 },
+            900: { slidesPerView: 3 }
+        }
+    });
+    </script>
+    <canvas id="tet-flower" style="position:fixed;pointer-events:none;top:0;left:0;width:100vw;height:100vh;z-index:999;"></canvas>
+    <script src="https://cdn.jsdelivr.net/gh/duyplus/tet-flower-falling/tet-flower.min.js"></script>
+    <script>
+      TetFlowerFalling.start({
+        image: 'https://i.imgur.com/6QwQw1B.png', // link ảnh hoa mai PNG nền trong suốt
+        count: 30
+      });
+    </script>
+</body>
+</html>
